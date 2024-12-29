@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodie Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    body{
+      background: linear-gradient(#eceffe,#ced6fb) !important;
+    }
+    .head{
+      font-size: 20px;
+      font-weight: 800;
+      text-align: center;
+    }
+    .container{
+      height: 630px;
+      width: 100%;
+      /* background-color: blueviolet; */
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .left{
+      height: 90%;
+      width: 50%;
+      background-color: bisque;
+    }
+    .left iframe{
+      height: 100%;
+      width: 100%;
+    }
+    .right{
+      height: 90%;
+      width: 50%;
+      background-color: green;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+   }
+
+.title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color:#fff;
+}
+
+.subtitle {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color:#fff;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+input, select {
+    width: 48%;
+    padding: 15px 30px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #ffffff;
+    background: transparent;
+}
+
+input::placeholder, select {
+    color: #fff !important;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #ffd700; /* Highlight */
+}
+ select option{
+  background-color: rgba(0, 0, 0, 0.716);
+  color: #fff;
+ }
+.submit-btn {
+    background-color: #ffd700; /* Yellow button */
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.navbar{
+  height: 70px;
+  background-color: green;
+  color: #fff;
+  /* font-size: 1.8rem; */
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.navbar a{
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+  position: relative;
+  left: 30px;
+}
+
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="./index2.html">FOODIE</a>
+  </nav>
+  
+  
+  <div class="container">
+    <div class="left">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1101.0689841788178!2d73.82380919252552!3d18.590466132945366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1733323257180!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="right">
+        <h1 class="title">WHAT'S UP GUYS</h1>
+        <h2 class="subtitle">BOOK YOUR TABLE</h2>
+        <form class="booking-form">
+            <div class="form-row">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-row">
+                <input type="tel" placeholder="Your Phone" required>
+                <input type="date" placeholder="dd-mm-yyyy" required>
+            </div>
+            <div class="form-row">
+                <select required>
+                    <option value="" disabled selected>Time</option>
+                    <option value="10:00 AM">10:00 AM</option>
+                    <option value="11:00 AM">11:00 AM</option>
+                    <option value="12:00 PM">12:00 PM</option>
+                    <option value="13:00 AM">13:00 AM</option>
+                    <option value="14:00 AM">14:00 AM</option>
+                    <option value="15:00 PM">15:00 PM</option>
+                </select>
+                <select required>
+                    <option value="" disabled selected>People</option>
+                    <option value="1">1 People</option>
+                    <option value="2">2 People</option>
+                    <option value="3">3 People</option>
+                    <option value="4">4 People</option>
+                </select>
+            </div>
+            <button type="submit" class="submit-btn" id="btn">BOOK NOW</button>
+        </form>
+    </div>
+  </div>
+
+  <script>
+    // let btn=document.getElementById("btn");
+    // // console.log(btn);
+    // btn.addEventListener("click",()=>{
+    //   alert("You Successfully Book The Seat");
+    // })
+    
+    const form = document.querySelector('.booking-form');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const name = form.querySelector('input[placeholder="Your Name"]').value.trim();
+      const email = form.querySelector('input[placeholder="Your Email"]').value.trim();
+      const phone = form.querySelector('input[placeholder="Your Phone"]').value.trim();
+      const date = form.querySelector('input[type="date"]').value;
+      const time = form.querySelector('select[required]').value;
+    
+      if (!name || name.length < 3) {
+        alert("Please enter a valid name (at least 3 characters).");
+        return;
+      }
+    
+      if (!email.includes('@')) {
+        alert("Please enter a valid email.");
+        return;
+      }
+    
+      if (!phone.match(/^\d{10}$/)) {
+        alert("Please enter a valid 10-digit phone number.");
+        return;
+      }
+    
+      const selectedDate = new Date(date);
+      if (selectedDate < new Date()) {
+        alert("Please select a valid future date.");
+        return;
+      }
+    
+      alert("You successfully booked the seat!");
+});
+
+  </script>
+  
+</body>
+</html>
