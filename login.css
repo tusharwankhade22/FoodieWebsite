@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: #f3f4f6; /* Light gray background */
+    color: #333;
+}
+
+/* From Uiverse.io by csemszepp */ 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    --s: 194px; /* control the size */
+    --c1: #f6edb3;
+    --c2: #acc4a3;
+  
+    --_l: #0000 calc(25% / 3), var(--c1) 0 25%, #0000 0;
+    --_g: conic-gradient(from 120deg at 50% 87.5%, var(--c1) 120deg, #0000 0);
+  
+    background: var(--_g), var(--_g) 0 calc(var(--s) / 2),
+      conic-gradient(from 180deg at 75%, var(--c2) 60deg, #0000 0),
+      conic-gradient(from 60deg at 75% 75%, var(--c1) 0 60deg, #0000 0),
+      linear-gradient(150deg, var(--_l)) 0 calc(var(--s) / 2),
+      conic-gradient(
+        at 25% 25%,
+        #0000 50%,
+        var(--c2) 0 240deg,
+        var(--c1) 0 300deg,
+        var(--c2) 0
+      ),
+      linear-gradient(-150deg, var(--_l)) #55897c /* third color here */;
+    background-size: calc(0.866 * var(--s)) var(--s);
+  }
+  
+
+/* Login Container */
+.login-container {
+    background: greenyellow; /* White background for the form */
+    padding: 40px 50px; /* Added extra padding */
+    border-radius: 15px; /* Slightly rounded corners */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out; /* Smooth fade-in effect */
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.login-container h1 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+/* Input Fields */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px; /* Slightly increased padding */
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    background: #f9f9f9;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #6a11cb;
+    outline: none;
+    box-shadow: 0 0 5px rgba(106, 17, 203, 0.5); /* Glow effect */
+}
+
+/* Button */
+.btn {
+    width: 100%;
+    padding: 12px 15px;
+    background: linear-gradient(90deg, #6a11cb, #2575fc); /* Gradient color */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Forgot Password Link */
+.forgot-password {
+    display: inline-block;
+    margin-top: 15px;
+    color: #6a11cb;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease-in-out;
+}
+
+.forgot-password:hover {
+    color: #2575fc;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 30px;
+        width: 90%;
+    }
+}
