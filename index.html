@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./login.css">
+    <script>
+        function validateAndRedirect(event) {
+            event.preventDefault(); // Prevent the form's default submission behavior
+            // Get the input values
+            let username = document.getElementById("username").value.trim();
+            let password = document.getElementById("password").value.trilet;
+            // Validation logic
+            if (username === "" || password === "") {
+                alert("Please enter both username and password."); // Show alert if any field is empty
+            } else {
+                // Redirect to the home page if validation passes
+                window.location.href = "index2.html";
+            }
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <div class="login-container">
+            <h1>Login Page</h1>
+            <form onsubmit="validateAndRedirect(event)">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username">
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <button type="submit" class="btn">Sign In</button>
+            </form>
+            <a href="#" class="forgot-password">Forgot Password?</a>
+        </div>
+    
+    </main>
+   </body>
+</html>
