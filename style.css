@@ -1,0 +1,450 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+body{
+    /* background-color: rgb(248, 145, 2) !important; */
+    /* background-color:deeppink; */
+    background: linear-gradient(#eceffe,#ced6fb) !important;
+}
+.container{
+    height: 100%;
+    width: 100%;
+}
+.navbar{
+    height: 80px !important;
+}
+.nav-link:hover{
+    color: rgb(202, 248, 66) !important;
+    text-decoration: underline !important;
+    text-decoration-color: rgb(202, 248, 66) !important;
+    text-underline-position: cover !important;
+}
+.navbar-brand{
+    font-weight: 700;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 90px;
+
+    /* gap: 50px; */
+}
+
+.main img{
+    width: 650px;
+    position: relative;
+    left: 80px;
+    bottom: 50px;
+}
+
+.imgs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 160px;
+    /* background-color: aqua; */
+    margin-bottom: 20px;
+}
+
+.imgs img{
+    cursor: pointer;
+    width: 180px;
+    height: 180px;
+    position: relative;
+    top: 60px;
+    left: 30px;
+    margin-right: 20px;
+
+}
+
+.imgs img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.mainText{
+    position: relative;
+    top: 44px;
+}
+
+.main h1{
+    font-size: 50px;
+}
+
+.main p{
+    position: relative;
+    top:22px;
+    color: green;
+    font-size: 30px;
+}
+
+.main a{
+    width: 140px;
+    height: 39px;
+    background-color: orangered;
+    font-size: 18px;
+    border: none;
+    position: relative;
+    top: 30px;
+}
+  
+.btn-expolre{
+    color: white !important;
+} 
+
+.btn-expolre:hover{
+    background-color: red !important;
+    color: black !important;
+    transition: 0.5s;
+}
+.head{
+    text-align: center;
+    margin-top: 60px;
+    padding: 60px;
+}
+.foods{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+.foodcard{
+    width: 330px !important;
+    padding: 15px !important;
+    cursor: pointer;
+    box-shadow: 0 0 5x 5px black;
+
+}
+
+.foodcard:hover{
+    transform: scale(1.02);
+    transition: 1s;
+    /* background-color: rgb(243, 196, 7); */
+    /* color: rgb(55, 4, 183); */
+}
+
+.foodcard .btn{
+    width: 130px !important;
+    padding: 10px;
+    border: none;
+    font-size: 18px;
+}
+.foodcard .btn:hover{
+    background-color: red;
+    color: black;
+    transition: 0.5s;
+    
+}
+
+
+.reviews{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.review-card{
+    width: 400px;
+    padding: 20px;
+    cursor: pointer;
+
+
+}
+.review-card:hover{
+    transform: scale(1.03);
+    transition: 1s;
+    box-shadow: 0 0 2px 2px black ;
+}
+
+.review-card img{
+    width: 300px;
+    height: 200px;
+    position: relative;
+    top:30px;
+
+}
+
+.card-body>i{
+    color: red !important;
+    font-size: 20px;
+}
+/* .trends{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+.trendfood{
+    display: flex;
+    justify-content: center;
+    
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: auto;
+    overflow: hidden;
+    transition: all 1 ease;
+}
+.trendfood img{
+    width: 600px;
+    height: 300px;
+    margin-inline:10px ;
+} */
+
+/* our services */
+
+.service-card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.service-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    flex: 1 1 calc(25% - 20px);
+    box-sizing: border-box;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+}
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.service-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+.service-card:hover img {
+    transform: scale(1.05);
+   
+}
+.service-card-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #D2691E;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.service-card-description {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* footer */
+
+
+.footer{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    padding: 66px;
+    margin-top: 66px;
+    
+}
+.footer .text{
+    cursor: pointer;
+}
+.footer .text h1{
+    /* margin-bottom: 20px; */
+    font-size: 30px;
+    font-weight: 900;
+}
+.footer .text p:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-underline-position: cover;
+}
+
+/* .container{
+    height: 100%;
+    width: 100%;
+    background: yellow;
+} */
+
+/* slider css-trends */
+
+.wrapper{
+    max-width: 1300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper i{
+    position: absolute;
+    top: 50%;
+    background: black;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    line-height: 46px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transform: translate(-50%,);
+}
+.wrapper i:first-child{
+    left: -60px;
+}
+.wrapper i:last-child{
+    right: -60px;
+}
+.wrapper .carousel{
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 0px;
+    scroll-behavior: smooth;
+
+}
+.carousel .dragging{
+    scroll-behavior: auto;
+    cursor: grab;
+
+}
+.carousel .dragging img{
+    pointer-events: none;
+    
+}
+.carousel img{
+    height: 400px;
+    object-fit: cover;
+    width: calc(100% / 3);
+    margin-left: 13px;
+
+}
+.carousel img:hover{
+    transform: scale(1.1);
+    transition: 1.5s;
+}
+.carousel img:first-child{
+    margin-left: 0px;
+}
+
+/* responsive  */
+@media screen and (max-width:900px) {
+    .carousel img{
+        width: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width:550px) {
+    .carousel img{
+        width: 100%;
+    }
+}
+
+/* navbar contact us */
+
+/* From Uiverse.io by david-mohseni */ 
+.wrapper1 {
+    display: flex;
+    list-style: none;
+    height: 120px;
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 0%;
+    font-family: "Poppins", sans-serif;
+    justify-content: space-between;
+  }
+  
+  .wrapper1 .icon {
+    position: relative;
+    background: #fff;
+    color: #000;
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper1 .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper1 .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper1 .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .wrapper1 .icon:hover span,
+  .wrapper1 .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wrapper1 .facebook:hover,
+  .wrapper1 .facebook:hover .tooltip,
+  .wrapper1 .facebook:hover .tooltip::before {
+    background: #1877f2;
+    color: #fff;
+  }
+  
+  .wrapper1 .twitter:hover,
+  .wrapper1 .twitter:hover .tooltip,
+  .wrapper1 .twitter:hover .tooltip::before {
+    background: #1da1f2;
+    color: #fff;
+  }
+  
+  .wrapper1 .instagram:hover,
+  .wrapper1 .instagram:hover .tooltip,
+  .wrapper1 .instagram:hover .tooltip::before {
+    background: #e4405f;
+    color: #fff;
+  }
+  
